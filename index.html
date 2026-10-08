@@ -1,133 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LSK Solutions</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9 url('cloud_logo.png') no-repeat center center fixed;
-      background-size: 60%;
-      color: #333;
-    }
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LSK Solutions | Microsoft 365, Exchange &amp; Legacy Modernisation</title><meta name="description" content="Specialist consultancy for Microsoft 365, Exchange, HCL Notes and Domino, Active Directory and cloud migrations. Practical delivery backed by over 30 years of IT experience.">
+<meta name="theme-color" content="#102b46"><link rel="icon" href="brand-mark.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.lsksolutions.co.uk/">
+<meta property="og:type" content="website"><meta property="og:locale" content="en_GB"><meta property="og:site_name" content="LSK Solutions">
+<meta property="og:title" content="LSK Solutions | Microsoft 365, Exchange &amp; Legacy Modernisation"><meta property="og:description" content="Specialist consultancy for Microsoft 365, Exchange, HCL Notes and Domino, Active Directory and cloud migrations. Practical delivery backed by over 30 years of IT experience."><meta property="og:url" content="https://www.lsksolutions.co.uk/">
+<meta property="og:image" content="https://www.lsksolutions.co.uk/lsk-social.png"><meta property="og:image:alt" content="LSK Solutions logo">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="LSK Solutions | Microsoft 365, Exchange &amp; Legacy Modernisation"><meta name="twitter:description" content="Specialist consultancy for Microsoft 365, Exchange, HCL Notes and Domino, Active Directory and cloud migrations. Practical delivery backed by over 30 years of IT experience."><meta name="twitter:image" content="https://www.lsksolutions.co.uk/lsk-social.png">
+<style>
+:root{--navy:#102b46;--ink:#182e43;--muted:#536779;--blue:#1764bd;--line:#dce5ec;--paper:#f3f6f9}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65}a{color:inherit}a:focus-visible{outline:3px solid #438ded;outline-offset:5px}img{display:block;max-width:100%}.wrap{width:min(1160px,calc(100% - 64px));margin:auto}.skip{position:absolute;top:-100px;left:20px;background:white;padding:12px;z-index:10}.skip:focus{top:10px}
+header{border-bottom:1px solid var(--line)}.nav{min-height:96px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{display:flex;align-items:center;gap:13px;text-decoration:none}.brand img{width:45px;height:45px}.brand-name{font-size:23px;font-weight:700;letter-spacing:-.8px}.brand-name span{font-weight:400}.brand-note{display:block;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:-3px}nav{display:flex;align-items:center;gap:30px}nav a{text-decoration:none;font-size:14px;font-weight:600}nav a:hover{color:var(--blue)}.button{display:inline-flex;align-items:center;justify-content:center;gap:20px;background:var(--blue);color:white;text-decoration:none;padding:14px 23px;border:1px solid var(--blue);border-radius:5px;font-size:14px;font-weight:700;transition:background .2s}.button:hover{background:#124d92}nav .button{padding:10px 18px;color:white}.button.secondary{color:var(--ink);background:transparent;border-color:#b7c7d6}.button.secondary:hover{background:#e8eef4}
+.hero{background:linear-gradient(110deg,#f4f7fa,#edf3f8);padding:0;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:55px;padding-top:85px;padding-bottom:80px}.eyebrow{font-size:11px;letter-spacing:2.2px;font-weight:700;text-transform:uppercase;color:var(--blue);display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";height:2px;width:26px;background:currentColor}h1{font-size:clamp(40px,4.5vw,61px);line-height:1.08;letter-spacing:-2.3px;margin:23px 0}h1 span{color:var(--blue)}.hero p{font-size:17px;max-width:530px;color:var(--muted);margin:0 0 28px}.actions{display:flex;flex-wrap:wrap;gap:12px}.hero-foot{margin-top:30px;font-size:12px;color:var(--muted)}.hero-art img{width:100%;height:auto}.art-caption{font-size:10px;color:var(--muted);display:flex;justify-content:space-between;letter-spacing:1px;padding:8px 18px;text-transform:uppercase}
+.proof{border-bottom:1px solid var(--line)}.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:28px 0}.proof-item{padding:0 30px;border-right:1px solid var(--line)}.proof-item:first-child{padding-left:0}.proof-item:last-child{border:0}.proof strong{display:block;font-size:18px}.proof span{font-size:13px;color:var(--muted)}section{padding:85px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:35px}h2{font-size:clamp(29px,3vw,39px);letter-spacing:-1.2px;line-height:1.2;margin:14px 0 0}.section-head p{max-width:380px;font-size:15px;color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:32px;border:1px solid var(--line);border-radius:7px}.number{font-size:12px;font-weight:700;color:var(--blue);letter-spacing:1px}.card h3{font-size:21px;line-height:1.3;margin:30px 0 14px;letter-spacing:-.4px}.card p{font-size:14px;color:var(--muted);margin:0}.card ul{padding:18px 0 0;list-style:none;border-top:1px solid var(--line);margin:25px 0 0;font-size:13px}.card li{padding:4px 0}.card li:before{content:"+";color:var(--blue);margin-right:10px}
+.approach{background:var(--navy);color:white}.approach-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px}.approach .eyebrow{color:#9bc4f3}.approach h2{max-width:450px}.approach p{color:#c0d0de;font-size:15px;max-width:430px}.steps{display:grid;gap:24px}.step{display:grid;grid-template-columns:40px 1fr;gap:18px;border-bottom:1px solid #345069;padding-bottom:24px}.step:last-child{border:0;padding-bottom:0}.step-index{border:1px solid #58718b;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:12px;color:#b9d7fa}.step h3{font-size:18px;margin:0 0 6px}.step p{margin:0;font-size:14px}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px}.about p{color:var(--muted);font-size:16px;margin:0 0 20px}.other{background:var(--paper);border-left:3px solid var(--blue);padding:23px 25px;margin-top:25px}.other h3{margin:0 0 7px;font-size:15px}.other p{font-size:14px;margin:0}.contact{padding:0 0 80px}.contact-box{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:45px 50px;display:flex;align-items:center;justify-content:space-between;gap:35px}.contact h2{margin:0 0 10px;font-size:32px}.contact p{margin:0;color:var(--muted);max-width:570px;font-size:15px}.contact-links{flex-shrink:0;text-align:center}.contact-links>a:last-child{display:block;font-size:12px;color:var(--muted);margin-top:12px}footer{border-top:1px solid var(--line);padding:26px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px}.footer-inner strong{color:var(--ink)}
+@media(max-width:900px){.hero-grid{gap:25px}.hero-grid h1{font-size:43px}.cards{gap:12px}.card{padding:24px}.approach-grid,.about-grid{gap:40px}.section-head{align-items:start}.contact-box{padding:35px}nav{gap:18px}}
+@media(max-width:680px){.wrap{width:calc(100% - 40px)}.nav{min-height:85px;flex-wrap:wrap;padding:18px 0;gap:15px}.brand-name{font-size:21px}nav{width:100%;justify-content:space-between;gap:10px}nav a{font-size:12px}nav .button{padding:8px 13px}.hero-grid{grid-template-columns:1fr;padding-top:50px;padding-bottom:35px;gap:25px}.hero-grid h1{font-size:43px;letter-spacing:-1.8px}.hero p{font-size:16px}.hero-art{max-width:410px;margin:auto}.proof-grid{grid-template-columns:1fr;padding:12px 0}.proof-item,.proof-item:first-child{padding:13px 0;border:0;border-bottom:1px solid var(--line)}.proof strong{font-size:16px}section{padding:55px 0}.section-head{display:block}.section-head p{margin-top:20px}.cards,.approach-grid,.about-grid{grid-template-columns:1fr}.card h3{margin-top:20px}.contact{padding-bottom:50px}.contact-box{display:block;padding:28px}.contact h2{font-size:28px}.contact-links{text-align:left;margin-top:25px}.footer-inner{flex-direction:column;gap:6px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 
-    @media (max-width: 768px) {
-      body {
-        background-size: 90%;
-        background-position: top center;
-      }
-      header img {
-        width: 120px;
-      }
-      section {
-        margin: 1rem;
-        padding: 1rem;
-      }
-      .contact-box {
-        right: 10px;
-        left: auto;
-      }
-    }
-
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-    header img {
-      width: 160px;
-      margin-bottom: 0.5rem;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background-color: #eeeeee;
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #003366;
-      color: white;
-      margin-top: 2rem;
-    }
-    .small-caps {
-      font-variant: small-caps;
-    }
-    .contact-box {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      background-color: #003366;
-      color: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      z-index: 1000;
-      max-width: 250px;
-    }
-    .contact-box p {
-      margin: 0.5rem 0;
-    }
-  </style>
-</head>
-<body>
-  <div class="contact-box">
-    <p><strong>Email:</strong> info@lsksolutions.co.uk</p>
-  </div>
-
-  <header>
-    <img src="cloud_logo.png" alt="LSK Solutions Cloud Logo">
-    <h1>LSK <span class="small-caps">Solutions</span></h1>
-    <p>Your Legacy-to-Cloud Migration Experts</p>
-  </header>
-
-  <section>
-    <h2>About Us</h2>
-    <p>LSK Solutions is an information technology consultancy founded in 2022, backed by over 30 years of experience in delivering smart, sustainable software solutions. We specialise in helping organisations accelerate their journey to the cloud—especially those still reliant on legacy systems like Lotus Notes and Domino.</p>
-
-    <p>At LSK Solutions, we understand the challenges businesses face when moving from outdated platforms to modern, cloud-based environments. Our team offers deep expertise in legacy software and provides tailored consultancy services to guide clients through the entire migration lifecycle. Whether it's reimagining complex applications or simplifying transitions, we deliver with clarity, efficiency, and a personal touch.</p>
-  </section>
-
-  <section>
-    <h2>Our Mission</h2>
-    <p>Our mission is simple: to provide excellent service. We are committed to helping our clients overcome the barriers of outdated technology by delivering tailored, effective, and forward-thinking solutions. At the heart of our approach is a dedication to personal relationships—ensuring each client receives focused attention and clear, honest guidance throughout their digital transformation. We measure our success by the lasting value and confidence we bring to every organisation we serve.</p>
-  </section>
-
-  <section>
-    <h2>Who We Help</h2>
-    <p>We work with organisations that are struggling to find a modern home for their legacy Lotus Notes and Domino applications. Our bespoke consultancy ensures that every migration is handled with care and precision.</p>
-  </section>
-
-  <section>
-    <h2>Why Choose Us?</h2>
-    <ul>
-      <li>Over 30 years of experience</li>
-      <li>Expertise in legacy platforms</li>
-      <li>Tailored, one-to-one consultancy</li>
-      <li>Clear and efficient migration strategies</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Other Services</h2>
-    <ul>
-      <li>Social Media consultancy and support</li>
-      <li>Cloud to Cloud migrations</li>
-      <li>Bespoke marketing initiatives</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 LSK Solutions. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+/* Enterprise content layout */
+.hero-grid{grid-template-columns:1.4fr .8fr;gap:40px}.hero-grid h1{font-size:clamp(36px,4vw,56px)}.hero p{max-width:680px}.hero p+p{font-size:15px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.card h3{margin-top:15px}.card p+p{margin-top:14px}.card ul{line-height:1.75}.card:last-child:nth-child(odd){grid-column:1 / -1}.card:last-child:nth-child(odd) ul{columns:2;column-gap:40px}.card li{break-inside:avoid}.recent{background:var(--paper)}.recent .card{background:white}.section-head p{max-width:540px}.intro-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px}.prose{color:var(--muted);font-size:16px}.prose p:first-child{margin-top:0}.prose p:last-child{margin-bottom:0}.audience{padding-top:0}.audience-inner{border-top:1px solid var(--line);padding-top:50px}.audience ul{padding-left:20px}.audience li{padding:5px 0}.footer-inner{align-items:start}.footer-inner p{margin:0}.footer-inner a{display:inline-block;margin-top:6px}.brand img{flex-shrink:0}nav{gap:22px}.approach h2{max-width:400px}.contact{padding-top:20px}
+@media(max-width:900px){.nav{flex-wrap:wrap;padding:20px 0}nav{flex-wrap:wrap}.hero-grid{grid-template-columns:1.2fr .8fr}.intro-grid{gap:35px}.contact-box{align-items:start;flex-direction:column}.contact-links{text-align:left}}
+@media(max-width:680px){nav{justify-content:flex-start;gap:12px 22px}nav a{font-size:13px}.hero-grid,.intro-grid,.cards{grid-template-columns:1fr}.hero-grid h1{font-size:38px}.hero-art{max-width:320px}.card:last-child:nth-child(odd){grid-column:auto}.card:last-child:nth-child(odd) ul{columns:1}.audience-inner{padding-top:35px}.intro-grid{gap:24px}.contact h2{font-size:28px}.section-head p{margin-top:20px}}
+.brand img.brand-logo{width:200px;height:auto}
+@media(max-width:680px){.brand img.brand-logo{width:175px}}
+</style></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap nav"><a class="brand" href="#home" aria-label="LSK Solutions home"><img class="brand-logo" src="lsk-logo.svg" width="200" height="83" alt="LSK Solutions"></a><nav aria-label="Main navigation"><a href="#home">Home</a><a href="#services">Services</a><a href="#recent-work">Recent Work</a><a href="#about">About</a><a class="button" href="#contact">Contact</a></nav></div></header>
+<main id="main">
+<section id="home" class="hero" aria-labelledby="hero-title"><div class="wrap hero-grid"><div><div class="eyebrow">LSK Solutions</div><h1 id="hero-title">Enterprise messaging.<br>Modern infrastructure.<br><span>Practical expertise.</span></h1><p>LSK Solutions helps organisations modernise messaging platforms, strengthen identity infrastructure and move confidently towards the cloud.</p>
+<p>With over 30 years of IT experience, we provide specialist consultancy across Microsoft 365, Exchange, Outlook, Teams, HCL Notes and Domino, and Active Directory—from planning and migration to troubleshooting, automation and operational handover.</p><div class="actions"><a class="button" href="#contact">Discuss your project</a><a class="button secondary" href="#services">Explore our services</a></div></div><div class="hero-art"><img src="cloud-path.svg" width="520" height="410" alt="Connected applications moving towards a cloud platform"></div></div></section>
+<section aria-labelledby="intro-title"><div class="wrap intro-grid"><div><div class="eyebrow">Specialist consultancy</div><h2 id="intro-title">Specialist support for complex IT environments</h2></div><div class="prose"><p>Enterprise technology rarely starts with a clean slate. Established systems, business-critical applications and hybrid infrastructure all need careful consideration when making changes.</p>
+<p>LSK Solutions combines deep messaging expertise with hands-on infrastructure experience. We help you understand dependencies, choose a practical approach and deliver changes with clear documentation and meaningful validation.</p>
+<p>Whether you are modernising Exchange, moving workloads into Microsoft 365 or finding a future for legacy Notes and Domino applications, we bring technical depth and straightforward advice.</p></div></div></section>
+<section id="services" aria-labelledby="services-title"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Services</div><h2 id="services-title">How we can help</h2></div></div><div class="cards"><article class="card"><span class="number">01</span><h3>Microsoft 365 and Exchange</h3><p>Plan, modernise and support enterprise messaging across on-premises, hybrid and cloud environments.</p>
+<p>Our work includes:</p>
+<ul><li>Exchange Server upgrades, including Subscription Edition.</li><li>Exchange Online migrations and hybrid connectivity.</li><li>Outlook configuration and messaging troubleshooting.</li><li>Mail flow, connectors and application email integration.</li><li>Calendar sharing and cross-tenant collaboration.</li><li>Reviewing application dependencies and preparing for Microsoft 365 service changes.</li></ul></article>
+<article class="card"><span class="number">02</span><h3>HCL Notes and Domino modernisation</h3><p>Make informed decisions about the future of your Notes and Domino environment.</p>
+<p>We help organisations assess existing platforms, understand application dependencies and plan suitable migration or modernisation paths. Where Domino remains part of the environment, we also support integration and messaging troubleshooting.</p>
+<p>Our work includes:</p>
+<ul><li>Notes and Domino environment assessment.</li><li>Legacy application discovery and migration planning.</li><li>Messaging coexistence and integration with Exchange and Microsoft 365.</li><li>SMTP routing and mail delivery troubleshooting.</li><li>Technical planning for phased transitions.</li></ul></article>
+<article class="card"><span class="number">03</span><h3>Active Directory and supporting infrastructure</h3><p>Build and validate the identity infrastructure that enterprise services depend on.</p>
+<p>We support domain controller deployment and operational troubleshooting, with particular attention to distributed environments where DNS, replication and network connectivity must work together reliably.</p>
+<p>Our work includes:</p>
+<ul><li>Read-only and writable domain controller deployment.</li><li>DNS and Active Directory replication troubleshooting.</li><li>Firewall dependency investigation.</li><li>Deployment validation and health assessment.</li><li>Inventory reconciliation and build documentation.</li></ul></article>
+<article class="card"><span class="number">04</span><h3>PowerShell automation and reporting</h3><p>Replace repetitive administration with practical, maintainable tools.</p>
+<p>We develop PowerShell automation that helps technical teams collect evidence, check configuration and understand the current state of their environments.</p>
+<p>Our work includes:</p>
+<ul><li>Configuration and inventory collection.</li><li>Automated deployment and health validation.</li><li>Consolidated HTML reporting.</li><li>Filtering and drill-down views for technical findings.</li><li>Clear separation of current issues from historical events.</li><li>Documentation and handover for ongoing use.</li></ul></article>
+<article class="card"><span class="number">05</span><h3>Cloud migration and collaboration</h3><p>Plan transitions around your organisation’s existing systems and business requirements.</p>
+<p>We help clients assess migration dependencies, define a workable delivery approach and support the move between legacy, on-premises and cloud platforms.</p>
+<p>Our work includes:</p>
+<ul><li>Migration readiness and dependency assessment.</li><li>On-premises-to-cloud and cloud-to-cloud migration planning.</li><li>Microsoft 365 messaging and collaboration guidance.</li><li>Outlook, Teams and Copilot readiness considerations.</li><li>Technical workstream coordination and operational handover.</li></ul></article>
+<article class="card" id="ai-assisted-development"><span class="number">06</span><h3>AI-assisted development &amp; automation</h3><p>Explore practical ways to use AI to develop tools, prototype ideas and simplify repetitive technical work.</p><p>AI-assisted coding, sometimes called “vibe coding”, can help turn an initial idea into a working prototype. Clear requirements, human review and relevant testing help establish whether the result is suitable for its intended use.</p><p>Potential applications include:</p><ul><li>Rapid prototypes and proof-of-concept applications.</li><li>Internal tools and workflow automation.</li><li>AI-assisted scripting, reporting and documentation.</li><li>Reviewing generated code and validating behaviour.</li><li>Assessing data handling, access controls and maintainability.</li><li>Documenting limitations and planning operational handover.</li></ul></article></div></div></section>
+<section id="recent-work" class="recent" aria-labelledby="work-title"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Recent work</div><h2 id="work-title">Recent consultancy work</h2></div><p>Examples of recent work demonstrate how we combine implementation, troubleshooting and automation. Engagement details are anonymised to protect client confidentiality.</p></div><div class="cards"><article class="card"><span class="number">01</span><h3>Exchange modernisation and hybrid integration</h3><p>Supported Exchange Server Subscription Edition upgrade work and hybrid connectivity, including application integrations using EWS and IMAP. Coordinated delivery across multiple technical workstreams.</p></article>
+<article class="card"><span class="number">02</span><h3>Microsoft 365 application and collaboration readiness</h3><p>Reviewed EWS dependencies, application access controls and cross-tenant calendar-sharing configuration. Developed guidance and PowerShell checks to support readiness assessment and change planning.</p></article>
+<article class="card"><span class="number">03</span><h3>Distributed Active Directory deployment</h3><p>Supported the deployment and validation of read-only and writable domain controllers across multiple locations. Investigated DNS, replication and firewall issues affecting promotion and ongoing health.</p></article>
+<article class="card"><span class="number">04</span><h3>Automated infrastructure validation</h3><p>Developed PowerShell tools to collect build evidence, assess domain controller health and consolidate results into accessible reports. Reporting included deployment metadata, current findings and filters to help teams focus their review.</p></article>
+<article class="card"><span class="number">05</span><h3>Domino and Exchange mail flow troubleshooting</h3><p>Investigated mail delivery issues between Domino and Exchange, including inconsistent DNS resolution, SMTP routing and receive-connector configuration.</p></article></div></div></section>
+<section class="approach" aria-labelledby="approach-title"><div class="wrap approach-grid"><div><div class="eyebrow">Our approach</div><h2 id="approach-title">Clear advice. Hands-on delivery.</h2></div><div class="steps"><div class="step"><span class="step-index">01</span><div><h3>Understand the environment</h3><p>We start with your current systems, business requirements and technical dependencies. This gives the work a clear scope and helps identify constraints early.</p></div></div>
+<div class="step"><span class="step-index">02</span><div><h3>Plan a practical route</h3><p>We explain the available options, highlight material risks and agree a delivery approach suited to your environment.</p></div></div>
+<div class="step"><span class="step-index">03</span><div><h3>Implement and validate</h3><p>We carry out the technical work and use relevant checks to establish whether the resulting configuration is operating as intended.</p></div></div>
+<div class="step"><span class="step-index">04</span><div><h3>Document and hand over</h3><p>We provide clear findings, configuration records and practical guidance so your team can support the environment after the engagement.</p></div></div></div></div></section>
+<section id="about" class="about" aria-labelledby="about-title"><div class="wrap intro-grid"><div><div class="eyebrow">Independent consultancy</div><h2 id="about-title">About LSK Solutions</h2></div><div class="prose"><p>LSK Solutions is an independent IT consultancy founded in 2022, backed by over 30 years of experience in enterprise messaging, legacy platforms and infrastructure.</p>
+<p>Our expertise spans Microsoft 365, Exchange, Outlook, Teams, HCL Notes and Domino, and the Active Directory services that underpin many enterprise environments.</p>
+<p>We work closely with clients and their technical teams, providing specialist advice alongside hands-on delivery. We value clear communication, careful implementation and documentation that remains useful after the project is complete.</p>
+<p>From focused troubleshooting to coordinated migration and modernisation work, our aim is to help organisations make sound technical decisions and deliver change with confidence.</p></div></div></section>
+<section class="audience" aria-labelledby="audience-title"><div class="wrap audience-inner intro-grid"><div><div class="eyebrow">Who we work with</div><h2 id="audience-title">Support where specialist experience matters</h2></div><div class="prose"><p>We work with organisations maintaining complex messaging environments, planning platform changes or managing legacy technology.</p>
+<p>We also support consultancies and delivery teams that need additional expertise for a defined project, technical workstream or difficult operational issue.</p>
+<p>Typical engagements include:</p>
+<ul><li>Organisations modernising Exchange or adopting Exchange Online.</li><li>Businesses planning the future of Notes and Domino.</li><li>IT teams supporting hybrid messaging and identity environments.</li><li>Consultancies requiring specialist delivery support.</li><li>Teams seeking reliable automation, validation and reporting.</li></ul></div></div></section>
+<section id="contact" class="contact" aria-labelledby="contact-title"><div class="wrap contact-box"><div><h2 id="contact-title">Let’s discuss your next project</h2><p>Whether you need help planning a migration, resolving a messaging issue or validating an infrastructure change, get in touch to discuss your requirements.</p></div><div class="contact-links"><a class="button" href="mailto:info@lsksolutions.co.uk">Email LSK Solutions</a><a href="mailto:info@lsksolutions.co.uk">info@lsksolutions.co.uk</a></div></div></section>
+</main><footer><div class="wrap footer-inner"><div><strong>LSK Solutions</strong><p>Enterprise messaging, infrastructure and cloud modernisation.</p><a href="mailto:info@lsksolutions.co.uk">info@lsksolutions.co.uk</a></div><span>© 2026 LSK Solutions. All rights reserved.</span></div></footer>
+</body></html>
